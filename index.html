@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/c4993cb090.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Jost&family=Inter&family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="author" content="Oguike Godswill">
+  <meta name="description" content="Portfoilo">
+  <meta name="keywords" content="HTML , CSS , JAVASCRIPT">
+  <link rel="icon" type="image/png" href="./img/cartoon.png" alt="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link href="./src/style.css" rel="stylesheet">
+  <title>Oguike</title>
+</head>
+<body class="m-0 p-0">
+    <div class="bg-[#D1D1D1] lg:px-10 p-5 py-5">
+        <header class="flex justify-between items-center">
+            <div class="flex items-center gap-5">
+                <div class="lg:hidden md:hidden">
+                    <span onclick="toggle()" class="text-2xl" id="toggleBtn"><i class="fa-solid fa-bars"></i></span>
+                </div>
+                <div>
+                    <h1 class="text-5xl font-dancing">Oguike &#9829;</h1>
+                </div>
+            </div>
+            <div class="hidden sm:hidden md:flex">
+                <nav class="">
+                    <ul class="flex justify-between gap-7 font-Jost">
+                        <li><a class="text-xl font-semibold hover:text-[#b18c62]" href="#">Home</a></li>
+                        <li><a class="text-xl font-semibold hover:text-[#b18c62]" href="#About">About</a></li>
+                        <li><a class="text-xl font-semibold hover:text-[#b18c62]" href="#Project">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class=" hidden sm:flex md:flex">
+                <a class="text-lg font-semibold font-Jost" href="#Contact">
+                    <button class="bg-slate-400 px-7 py-3">Contact Me</button>
+                </a>
+            </div>         
+        </header>
+    </div>
+    <span id="sidebar" class="hidden lg:hidden md:hidden flex-col bg-slate-400 w-full h-60 absolute right-0 top-15 p-5">
+        <div class="flex gap-7 flex-col">
+            <nav class="">
+                <ul class="justify-between gap-3 font-Jost flex flex-col">
+                    <li class="flex items-center gap-2 hover:text-[#b18c62]"><i class="fa-solid fa-house"></i><a class="text-xl font-semibold " href="#">Home</a></li>
+                    <li class="flex items-center gap-2 hover:text-[#b18c62]"><i class="fa-solid fa-user"></i><a class="text-xl font-semibold " href="#About">About</a></li>
+                    <li class="flex items-center gap-2 hover:text-[#b18c62]"><i class="fa-solid fa-folder"></i><a class="text-xl font-semibold" href="#Project">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="flex sm:hidden md:flex mt-2">
+                <a class="text-lg font-semibold font-Jost" href="#Contact">
+                    <button class="bg-sky-900 px-7 py-3 text-slate-100">Contact Me</button>
+                </a>
+            </div>   
+        </div>
+    </span>
+
+    <!-- Picture and Headline -->
+    <section class="bg-[#EFEFEF] overflow-hidden bg-cover bg-no-repeat lg:p-10 p-5 object-right font-[inter]" 
+            style="background-image: url(./src/img/bgforprofile.jpg); object-position: bottom; height: 620px; ">
+        <div class="flex flex-col items-start lg:gap-7 gap-10 justify-between mt-10 lg:flex-row md:flex-row">
+            <div class="flex flex-col gap-7  justify-between w-full">
+                <div>
+                    <h1 class="lg:text-7xl text-5xl">Hey There,</h1>
+                    <h1 class="lg:text-7xl text-5xl">I'm <span class="text-[#b18c62] lg:text-8xl text-6xl">O</span>guike</h1>
+                </div>
+                <div class="flex gap-5">
+                    <a href="https://twitter.com/GodswillOguike" class="text-2xl hover:text-[#b18c62]"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/godswill-oguike-174224243/" class="text-2xl hover:text-[#b18c62]"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/dammybundlez" class="text-2xl hover:text-[#b18c62]"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/dammybundleztm/" class="text-2xl hover:text-[#b18c62]"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="w-96">
+                <p class="text-3xl text-[#4c4a46] w-full">
+                   Full Stack Developer
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- //About Me -->
+    <section class="lg:p-10 bg-[#EFEFEF]" id="About">
+        <div class="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between items-start  pt-10">
+            <div class="lg:w-1/2 w-full">
+                <img class="w-full" src="./src/img/cartoon.png" alt="">
+            </div>
+            <div class="p-5 flex justify-center flex-col w-full lg:w-1/2">
+                <span class="flex flex-col gap-4 justify-center lg:justify-start items-center lg:items-start">
+                    <h2 class="font-Lobster text-7xl xs:text-6xl xs:text-center  text-black">About Me.</h2>
+                    <span class="">
+                        <p class="lg:text-4xl text-2xl mb-3 font-Jost font-semibold">I'm Oguike Godswill. <br>FullStack Web Developer, and problem solver.</p>
+                        <span class="font-Inter break-words">
+                            <p>Specializing in web experiences with a focus on responsive , and interactive content.</p>
+                            <p>Delivering highly executed front-end user experiences by paying close attention to the nuances of design, optimization, and performance. Having a Degree in Copmputer Science.</p>
+                            <P></P>
+                        </span>
+                    </span>
+                    <span class="flex flex-col gap-3 w-full text-xl font-semibold font-Jost py-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-user"></i><p>Name: Oguike Godswill</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone"></i><p>Phone: 07060868353</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope"></i><p>Email-Address: Oguikegodswill@gmail.com</p>
+                        </div>
+                    </span>
+                </span>    
+                <div class="mt-10 flex flex-col gap-1 justify-start items-start">
+                    <h2 class="font-bold text-2xl font-Jost ">My Stacks</h2>
+                    <span class="flex flex-wrap gap-2 text-lg font-Inter">
+                        <div class="flex items-center gap-3"><p>HTML/CSS</p> </div>
+                        <div class="flex items-center gap-3"><p>JAVASCRIPT</p> </div>
+                        <div class="flex items-center gap-3"><p>REACT</p> </div>
+                        <div class="flex items-center gap-3"><p>MySQL</p> </div>                     
+                        <div class="flex items-center gap-3"><p>REACT NATIVE</p> </div>
+                        <div class="flex items-center gap-3"><p>JENKINS</p> </div>                     
+                    </span>
+                </div>   
+                <div class="mt-10 flex flex-col gap-1 justify-start items-start">
+                    <h2 class="font-bold text-2xl font-Jost ">My Interests</h2>
+                    <span class="flex flex-wrap gap-3 text-lg font-Inter">
+                        <div class="flex items-center gap-3"> <i class="fa-solid fa-film"></i><p>Movie</p> </div>
+                        <div class="flex items-center gap-3"> <i class="fa-solid fa-laptop-code"></i><p>Coding</p> </div>
+                        <div class="flex items-center gap-3"> <i class="fa-solid fa-gear"></i><p>Software</p> </div>
+                        <div class="flex items-center gap-3"> <i class="fa-solid fa-headset"></i><p>Music</p> </div>                     
+                    </span>
+                </div>  
+                <div class="mt-10 flex flex-col gap-1 justify-start items-start">
+                    <h2 class="font-bold text-2xl font-Jost ">Skills</h2>
+                    <span class="flex  gap-7 text-lg  font-Inter">
+                        <div class="flex items-center"> <p>Debugging-knowledge / Communication / Testing-Procedures / API /  Middleware / Problem-Solving / Creativity / Active listening / Adaptability / Time management / CI/CD</p> </div>
+                    </span>
+                    <a href="../OGUIKE GODSWILL CV.pdf" download><button class="px-10 py-4 bg-black font-semibold text-lg text-white my-4 rounded-3xl" style="border-radius: 2rem;">Download CV</button></a>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <!-- projects -->
+    <section class="lg:p-10 p-5 flex flex-col justify-center items-center gap-10 md:bg-gray-300 sm:bg-slate-600 bg-[#D1D1D1]" id="Project">
+        <div>
+            <h1 class="text-5xl flex font-Lobster md:text-center capitalize sm:text-center xs:text-center font-semibold">Projects done and in-progress.</h1>
+        </div>
+        <div class="flex items-center lg:justify-between flex-wrap gap-2 font-Inter">
+            <div class="card lg:max-w-sm xs:w-full border-0 border-gray-200 rounded-lg shadow bg-[#7882a4] dark:bg-[#7882A4] dark:border-[#b18c62]">
+                <div class="p-5">
+                    <a href="https://github.com/dammybundlez/ecomerce">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-dark">1. E-commerce</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-black">E-commerce web app made with NextJS, Vanilla CSS and Sanity CMS. <br> User-friendly and easy to use</p>
+                    <a href="https://github.com/dammybundlez/ecomerce" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-[#F3EEEA] rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#F3EEEA] dark:hover:bg-black dark:hover:text-white">
+                        Check it out
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="card lg:max-w-sm border-0 border-gray-200 rounded-lg shadow bg-[#7882a4] dark:bg-[#7882A4] dark:border-[#b18c62]">
+                <div class="p-5">
+                    <a href="https://github.com/dammybundlez/chat-room-msg">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-dark">2. Chat-Room</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-black">Chat Messenger created with React JS, Vanilla CSS Node Js and Socket.io API. <br>Real-time Messenging experience.</p>
+                    <a href="https://github.com/dammybundlez/chat-room-msg" class="inline-flex  items-center px-3 py-2 text-sm font-medium text-center text-black bg-[#F3EEEA] rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#F3EEEA] dark:hover:bg-black dark:hover:text-white">
+                        Check it out
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class=" card lg:max-w-sm  border-0 border-gray-200 rounded-lg shadow bg-[#7882a4] dark:bg-[#7882A4] dark:border-[#b18c62]">
+                <div class="p-5">
+                    <a href="https://watchmate.netlify.app/">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-dark">3. Movie Search Engine</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-black">A Movie search engine is a Dynamic web app made with ReactJS, Tailwind CSS, and IMDB API.</p>
+                    <a href="https://watchmate.netlify.app/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-[#F3EEEA] rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#F3EEEA] dark:hover:bg-black dark:hover:text-white">
+                        Check it out
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class=" card lg:max-w-sm border-0 border-gray-200 rounded-lg shadow bg-[#7882a4] dark:bg-[#7882A4] dark:border-[#b18c62]">
+                <div class="p-5">
+                    <a href=https://github.com/dammybundlez/blog#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-dark">4. Blog</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-black">React JS, Node JS, Tailwind CSS, MySQL DB and other libraries. <br> CRUD operation enabled.</p>
+                    <a href="https://github.com/dammybundlez/blog" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-[#F3EEEA] rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#F3EEEA] dark:hover:bg-black dark:hover:text-white">
+                        Check it out
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="card lg:max-w-sm border-0 border-gray-200 rounded-lg shadow bg-[#7882a4] dark:bg-[#7882A4] dark:border-[#b18c62]">
+                <div class="p-5">
+                    <a href="https://godswill-library.netlify.app/">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-dark">5. Library(Books and Novels)</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-black">Produced with Google API, ReactJS , TailwindCSS, and other libraries.. <br> Great User experience. </p>
+                    <a href="https://godswill-library.netlify.app/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-[#F3EEEA] rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#F3EEEA] dark:hover:bg-black dark:hover:text-white">
+                        Check it Out
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card lg:max-w-sm border-0 border-gray-200 rounded-lg shadow bg-[#7882a4] dark:bg-[#7882A4] dark:border-[#b18c62]">
+                <div class="p-5">
+                    <a href="https://task-tracker-dammy.netlify.app/">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-dark">6. Task Tracker</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-black">A Web App made for calculating expenses and finances. <br> ReactJs and Vanilla CSS</p>
+                    <a href="https://task-tracker-dammy.netlify.app/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-[#F3EEEA] rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#F3EEEA] dark:hover:bg-black dark:hover:text-white">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="card lg:max-w-sm  border-0 border-gray-200 rounded-lg shadow bg-[#7882a4] dark:bg-[#7882A4] dark:border-[#b18c62]">
+                <div class="p-5">
+                    <a href="https://mealtutor.vercel.app/">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-dark">7. Meal Tutor</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-black">A Website made for learning how to prepare meals <br> HTML, CSS , JAVASCRIPT</p>
+                    <a href="https://mealtutor.vercel.app/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-[#F3EEEA] rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#F3EEEA] dark:hover:bg-black dark:hover:text-white">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#D1D1D1] flex flex-col items-start lg:flex-row p-10 gap-8 justify-start lg:justify-between" id="Contact">
+        <div>
+            <h1 class="text-5xl font-dancing">Oguike <span class="text-[#000]">&#9829;</span></h1>
+        </div>
+        <div class="flex flex-col lg:items-center">
+            <span class="font-Inter uppercase font-bold">follow me</span>
+            <span class="flex gap-4 text-xl py-2">
+              <a href="https://twitter.com/GodswillOguike" class="text-2xl hover:text-[#b18c62]"><i class="fa-brands fa-twitter"></i></a>  
+               <a href="https://www.linkedin.com/in/godswill-oguike-174224243/" class="text-2xl hover:text-[#b18c62]"><i class="fa-brands fa-linkedin"></i></a> 
+               <a href="https://github.com/dammybundlez" class="text-2xl hover:text-[#b18c62]"><i class="fa-brands fa-github"></i></a>
+               <a href="https://www.instagram.com/dammybundleztm/" class="text-2xl hover:text-[#b18c62]"><i class="fa-brands fa-instagram"></i></a> 
+            </span>
+        </div>
+        <div class="flex flex-col lg:items-center font-Inter">
+            <span class="font-Inter uppercase font-bold">contact me</span>
+            <span class="flex flex-col gap-2 text-xl py-2 lg:items-center font-medium">
+                <span>+234 706 086 8353</span>
+                <span>Oguikegodswill@gmail.com</span>
+            </span>
+        </div>
+    </footer>
+
+    <script>
+        function toggle() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active'); 
+        }
+    </script>
+</body>
+</html>

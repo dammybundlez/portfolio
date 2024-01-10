@@ -1,0 +1,25 @@
+.card{
+    width: 49%;
+}
+
+.active{
+    display: block;
+}
+@media screen and (max-width: 600px){
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .card{
+        min-height: 250px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .card{
+        min-height: 250px;
+        width: 32%;
+    }
+}
